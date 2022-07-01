@@ -16,9 +16,7 @@ const Header = () => {
         <div className="image-container">
           <img className="fitting-image" src={Me} alt="me"/>
         </div>
-
         <a href="#contact" className="scroll-down">SCROLL DOWN</a>
-
       </div>
     </header>
   )

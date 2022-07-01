@@ -11,21 +11,28 @@ header {
 .image-container {
   margin-top: 3rem;
   padding-top: 0.5rem;
-  width: 35%;
+  width: 45%;
   height: 58vh;
   margin-inline: auto;
-  background-color: var(--color-primary);
+  background: linear-gradient(var(--color-primary), transparent);
   position: relative;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
+  overflow: hidden;
+}
+
+.image-container > img {
+  padding-top: 4rem;
+  overflow: hidden;
 }
 
 .fitting-image {
+  width: 100%;
   display: block;
   margin-inline: auto;
   transform: scale(1.13);
   position: absolute;
-  margin-top: 0.65rem;
+  margin-top: 0.95rem;
 }
 
 .cta {
@@ -59,4 +66,36 @@ hr {
   bottom: 8rem;
   transform: rotate(90deg);
   letter-spacing: 0.2rem;
+}
+
+@media screen and (max-width: 1020px) { 
+  .container {
+    width: 95%;
+    height: 100%;
+  }
+  .image-container {
+    width: 80%;
+    height: 60vh;
+  }
+
+  .scroll-down {
+    right: 0rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .image-container {
+    height: 60vh;
+    width: 100%;
+  }
+
+  .fitting-image {
+    width: 100%;
+    /* position: relative; */
+    margin-inline: auto;
+  }
+
+  .header-socials, .scroll-down {
+    display: none;
+  }
 }

@@ -1,0 +1,39 @@
+.nav-bar {
+  background-color: rgba(0, 0, 0, 0.3);
+  width:max-content;
+  padding: 0.9rem 1.3rem;
+  z-index: 10;
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  /* justify-content: center; */
+  gap:1rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(55px);
+}
+
+nav > a {
+  background-color: transparent;
+  padding: 0.35rem;
+  border-radius: 50%;
+  color: var(--color-light);
+  /* font-size: 1.1rem; */
+}
+
+nav > a.active {
+  border-radius: 50%;
+  background-color: var(--color-light);
+  color: var(--color-bg)
+}
+
+nav > a:hover {
+  background-color: rgba(125, 123, 123, 0.1);
+  color: white
+}
+
+.icon-style {
+  width: 25px;
+  height: 20px;
+}

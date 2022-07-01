@@ -52,6 +52,7 @@ h1 {
 }
 
 section {
+  height: 100vh;
   margin-top: 8rem;
 }
 
@@ -100,12 +101,6 @@ a:hover {
 .btn-primary:hover {
   background-color: var(--color-white);
   color: var(--color-bg);
-}
-
-img {
-  /* display: block;
-  width: 100%;
-  object-fit: cover; */
 }
 
 .text-light {
