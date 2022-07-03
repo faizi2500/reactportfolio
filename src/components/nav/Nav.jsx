@@ -11,18 +11,16 @@ const Nav = () => {
   
   const clickHandler = (event) => {
     setActive(event.currentTarget.id)
-    return
   }
   console.log(activeNav);
 
   return (
     <nav id="nav-id" className="nav-bar">
-      <a href="#" id="home" className={activeNav === 'home' ? 'active' : ''} onClick={clickHandler}><AiOutlineHome className='icon-style'/></a>
-      <a href="#about" id="about" className={activeNav === 'about' ? 'active' : ''} onClick={clickHandler}><AiOutlineUser className='icon-style' /></a>
-      <a href="#experience" id="experience" className={activeNav === 'experience' ? 'active' : ''} onClick={clickHandler}><BiBook className='icon-style'/></a>
-      <a href="#portfolio" id="portfolio" className={activeNav === 'portfolio' ? 'active' : ''} onClick={clickHandler}><RiServiceLine className='icon-style'/></a>
-      <a href="#contact" id="contact" className={activeNav === 'contact' ? 'active' : ''} onClick={clickHandler}><BiMessageSquareDetail className='icon-style'/></a>
-
+      <a href="#" id="home-sec" className={activeNav === 'home-sec' ? 'active' : ''} onClick={clickHandler}><AiOutlineHome className='icon-style'/></a>
+      <a href="#about" id="about-sec" className={activeNav === 'about-sec' ? 'active' : ''} onClick={clickHandler}><AiOutlineUser className='icon-style' /></a>
+      <a href="#experience" id="experience-sec" className={activeNav === 'experience-sec' ? 'active' : ''} onClick={clickHandler}><BiBook className='icon-style'/></a>
+      <a href="#portfolio" id="portfolio-sec" className={activeNav === 'portfolio-sec' ? 'active' : ''} onClick={clickHandler}><RiServiceLine className='icon-style'/></a>
+      <a href="#contact" id="contact-sec" className={activeNav === 'contact-sec' ? 'active' : ''} onClick={clickHandler}><BiMessageSquareDetail className='icon-style'/></a>
     </nav>
   )
 }
