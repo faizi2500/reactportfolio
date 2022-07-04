@@ -106,3 +106,15 @@ a:hover {
 .text-light {
   color: var(--color-light);
 }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+}

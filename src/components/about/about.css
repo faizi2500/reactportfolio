@@ -1,0 +1,122 @@
+#about {
+  margin-top: 2rem;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%;
+  margin-top: 3rem;
+}
+
+.image-section {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
+  border-radius: 2rem;
+  margin-top: 3rem;
+}
+
+.image-me {
+  display: block;
+  overflow: hidden;
+  background: linear-gradient(45deg, var(--color-bg-variant), var(--color-primary-variant));
+  border-radius: 2rem;
+  transform: rotate(15deg);
+  transition: 500ms linear;
+}
+
+.image-me:hover {
+  transform: rotate(0deg);
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  gap: 4%;
+  text-align: center;
+}
+
+.article-card {
+  border-color: transparent;
+  background: var(--color-bg-variant);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+.icon-size {
+  transform: scale(1.5);
+  margin-bottom: 0.8rem;
+  color: var(--color-primary);
+}
+
+.article-card:hover {
+  background: var(--color-white);
+  color: var(--color-bg);
+}
+
+small {
+  font-size: 0.7rem;
+}
+
+.about-btn {
+  /* width: 80%; */
+  margin-top: 2.5rem;
+}
+
+#btn-about-section {
+  width: 20%;
+  text-align: center;
+  font-size: larger;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-section{
+    margin-top: 2%;
+  }
+  .about-container {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .image-me {
+    width: 100%;
+  }
+
+  .image-section {
+    width: 70%;
+    margin: auto;
+  }
+
+  #btn-about-section {
+    display: block;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-cards {
+    grid-template-columns: 50% 50%;
+  }
+  .article-card {
+    margin-block: 0;
+  }
+
+  .abount-content {
+    margin-bottom: 10rem;
+  }
+
+
+  .para-section {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  
+  #btn-about-section {
+    display: block;
+    width: 50%;
+    margin-inline: auto;
+  }
+}
