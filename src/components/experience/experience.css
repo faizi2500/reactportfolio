@@ -1,5 +1,6 @@
 #experience {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
+  /* display: block; */
 }
 
 .experiece-article-section {
@@ -45,9 +46,30 @@
   margin-block: 1rem;
 }
 
-.backend-skill-article {
+.each-section-article {
   /* background-color: rgba((var(--color-bg-variant), 0, 0, 0.5)); */
   background: rgba(44, 44, 108, 0.75);
   
   border-color: transparent;
+}
+
+.each-section-article:hover {
+  background-color: transparent;
+  border-color: var(--color-light);
+}
+
+@media screen and (max-width: 1024px) {
+  .heading-5 {
+    margin-top: 14rem;
+  }
+  
+  .experiece-article-section {
+    grid-template-columns: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .experiece-article-section {
+    width: 100%;
+  }
 }

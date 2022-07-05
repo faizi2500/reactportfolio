@@ -1,5 +1,6 @@
 #about {
   margin-top: 2rem;
+  height: max-content;
 }
 
 .about-container {

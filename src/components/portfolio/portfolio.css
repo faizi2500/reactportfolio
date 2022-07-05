@@ -1,1 +1,38 @@
+  .portfolio-container {
+    width: 90%;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5%;
+  }
   
+  .each-project {
+    background-color: var(--color-bg-variant);
+    padding: 1rem 0.5rem 2rem 0.5rem ;
+    border-radius: 2rem;
+  }
+  
+  .project-image {
+    width: 100%;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    transform: scale(0.9);
+  }
+
+  .project-btns {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .project-name {
+    font-size: 1.3rem;
+    margin-block: 1rem;
+  }
+
+  /* .each-project {
+    width: 100%;
+  } */
+
+  /* .project-image {
+    transform: scale(0.8);
+  } */

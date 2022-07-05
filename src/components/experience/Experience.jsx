@@ -3,11 +3,11 @@ import { HiBadgeCheck } from 'react-icons/hi'
 import './experience.css'
 
 const Experience = () => {
-  const frontendSkills = ['HTML', 'CSS', 'BootStrap', 'TailWind', 'JavaScript', 'React', 'Jest', 'React Testing Library']
+  const frontendSkills = ['HTML', 'CSS', 'BootStrap', 'TailWind', 'JavaScript', 'React', 'Unit Testing']
   const backendSkills = ['Ruby', 'RoR', 'ExpressJS', 'PostgreSQL', 'MongoDB', 'ORMs']
   return (
     <section id='experience'>
-      <h5>What Skills I Have</h5>  
+      <h5 className="heading-5">What Skills I Have</h5>  
       <h2>My Experience</h2>
 
       <div className='experiece-article-section'>
@@ -24,7 +24,7 @@ const Experience = () => {
             })}
           </div>
         </article>
-        <aritcle className="each-section-article backend-skill-article">
+        <aritcle className="each-section-article">
           <h3 className='heading-frontend'>Backend Development</h3>
           <div className='frontend-skill-section'>
             {backendSkills.map((skill) => {
