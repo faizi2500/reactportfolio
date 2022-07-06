@@ -1,6 +1,7 @@
 #experience {
   /* margin-top: 2rem; */
   /* display: block; */
+  height: max-content;
 }
 
 .experiece-article-section {

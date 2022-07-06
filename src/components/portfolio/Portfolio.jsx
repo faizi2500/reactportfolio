@@ -40,10 +40,10 @@ const Portfolio = () => {
               <div className="project-image-container">
                 <img src={each.imagelink} alt="project 1 display" className='project-image'  />
               </div>
-              <p className='project-name'>{each.title}</p>
               <div className='project-btns'>
-                <a href={each.link} target="_blank" className='btn btn-primary'>Github</a>
-                <a href="" className='btn btn-primary'>Live Demo</a>
+                <p className='project-name'>{each.title}</p>
+                <a href={each.link} target="_blank" id="github-btn" className='btn btn-primary'>Github</a>
+                {/* <a href="" className='btn btn-primary'>Live Demo</a> */}
               </div>
             </article>
           )  

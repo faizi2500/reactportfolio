@@ -1,3 +1,6 @@
+  #portfolio {
+    height: max-content;
+  }
   .portfolio-container {
     width: 90%;
     margin-inline: auto;
@@ -11,6 +14,10 @@
     padding: 1rem 0.5rem 2rem 0.5rem ;
     border-radius: 2rem;
   }
+
+  .each-project:hover {
+    background-color: rgb(175, 175, 197);
+  }
   
   .project-image {
     width: 100%;
@@ -21,18 +28,41 @@
 
   .project-btns {
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .project-name {
-    font-size: 1.3rem;
+    font-size: 1.0rem;
     margin-block: 1rem;
   }
 
-  /* .each-project {
-    width: 100%;
-  } */
+  .each-project:hover .project-name {
+    color: var(--color-bg);
+    font-weight:bold;
+    font-size: 1.2rem;
+  }
 
-  /* .project-image {
-    transform: scale(0.8);
-  } */
+  .each-project:hover .project-image {
+    transform: scale(0.95);
+  }
+
+  #github-btn {
+    text-align: center;
+    width: 40%;
+    font-size: 1.05rem;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .portfolio-container {
+      grid-template-columns: 47.5% 47.5%;
+    }
+    
+  }
+
+  @media screen and (max-width: 600px) {
+    .portfolio-container {
+      grid-template-columns: 100%;
+    }
+  }
