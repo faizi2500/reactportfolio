@@ -65,4 +65,9 @@
     .portfolio-container {
       grid-template-columns: 100%;
     }
+  
+    .empty-space {
+      display: block;
+      margin-block: 11rem;
+    }
   }

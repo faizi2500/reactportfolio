@@ -14,9 +14,9 @@ const Experience = () => {
         <article className='each-section-article'>
           <h3 className='heading-frontend'>Frontend Development</h3>
           <div className='frontend-skill-section'>
-            {frontendSkills.map((skill) => {
+            {frontendSkills.map((skill, index) => {
               return (
-                <div className='each-skill'>
+                <div key={index} className='each-skill'>
                   <HiBadgeCheck />
                   <h3>{skill}</h3>
                 </div>
@@ -24,19 +24,19 @@ const Experience = () => {
             })}
           </div>
         </article>
-        <aritcle className="each-section-article">
+        <article className="each-section-article">
           <h3 className='heading-frontend'>Backend Development</h3>
           <div className='frontend-skill-section'>
-            {backendSkills.map((skill) => {
+            {backendSkills.map((skill, index) => {
               return (
-                <div className='each-skill'>
+                <div key={index} className='each-skill'>
                   <HiBadgeCheck />
                   <h3>{skill}</h3>
                 </div>
               )
             })}
           </div>
-        </aritcle>
+        </article>
       </div>
     </section>
   )

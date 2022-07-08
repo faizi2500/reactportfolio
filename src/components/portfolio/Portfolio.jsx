@@ -34,9 +34,9 @@ const Portfolio = () => {
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
       <div id="" className="portfolio-container">
-        {projectList.map((each) => {
+        {projectList.map((each, index) => {
           return(
-            <article className="each-project">
+            <article key={index} className="each-project">
               <div className="project-image-container">
                 <img src={each.imagelink} alt="project 1 display" className='project-image'  />
               </div>
@@ -49,6 +49,7 @@ const Portfolio = () => {
           )  
         })}
       </div>
+      <hr className='empty-space'/>
     </section>
   )
 }

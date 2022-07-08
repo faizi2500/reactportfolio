@@ -10,6 +10,9 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-scripts": "5.0.1",
+    "react-whatsapp": "^0.3.0",
+    "swiper": "^8.3.0",
+    "use-resize-observer": "^9.0.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

@@ -21,6 +21,7 @@
   --transition: all 400ms ease
 }
 
+
 html {
   scroll-behavior: smooth;
 }
@@ -52,7 +53,7 @@ h1 {
 }
 
 section {
-  height: 100vh;
+  /* height: 100vh; */
   margin-top: 8rem;
 }
 

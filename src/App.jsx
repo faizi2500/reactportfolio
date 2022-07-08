@@ -19,7 +19,6 @@ const App = () => {
       <Experiece />
       <Portfolio />
       <Blog />
-      <Testimonial />
       <Contact />
       <Footer />
 

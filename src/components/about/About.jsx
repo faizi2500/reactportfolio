@@ -34,7 +34,7 @@ const About = () => {
               <small>5+ Completed</small>
             </article>
           </div>
-          <p className='para-section'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi corrupti aperiam ut odit aut vitae officiis fuga delectus, explicabo est atque voluptatum illo blanditiis quaerat recusandae sed reiciendis sequi quidem rem earum veritatis nisi qui nesciunt! Quisquam dignissimos ex fuga possimus expedita totam officiis iusto ratione architecto quam magni nostrum perspiciatis obcaecati unde, minima esse provident</p>
+          <p className='para-section'>I'm a hands-on, agile, and empathetic developer who loves building effective products. I have experience working in teams to build applications using modern technologies. <br/> <br/> I'm a full stack developer with a passion towards front-end development. I have a background in SaaS and digital marketing. I am here to make the world a better place with good code.</p>
           <a href="#" id="btn-about-section" className='btn btn-primary about-btn'>Let's Talk</a>
         </div>
       </div>
