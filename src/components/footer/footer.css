@@ -1,0 +1,33 @@
+.footer-section {
+  height: 35vh;
+  margin-top: 3rem;
+  background-color: var(--color-primary);
+  /* padding-top: 0.1rem; */
+}
+
+.footer-heading {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 0.75rem;
+}
+
+.social-links-footer {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.social-links-footer > * {
+  font-size: 1.5rem;
+  align-content:  center;
+  color: white;
+}
+
+.social-links-footer > *:hover {
+  color: var(--color-light);
+}
+
+.copy-rights {
+  text-align: center;
+}

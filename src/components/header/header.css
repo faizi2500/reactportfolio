@@ -1,0 +1,101 @@
+header {
+  height: 100vh;
+  padding-top: 2.5rem;
+  overflow: hidden;
+}
+
+.header_container {
+  text-align: center;
+}
+
+.image-container {
+  margin-top: 3rem;
+  padding-top: 0.5rem;
+  width: 45%;
+  height: 58vh;
+  margin-inline: auto;
+  background: linear-gradient(var(--color-primary), transparent);
+  position: relative;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  overflow: hidden;
+}
+
+.image-container > img {
+  padding-top: 4rem;
+  overflow: hidden;
+}
+
+.fitting-image {
+  width: 100%;
+  display: block;
+  margin-inline: auto;
+  transform: scale(1.13);
+  position: absolute;
+  margin-top: 0.95rem;
+}
+
+.cta {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+.header-socials {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  position: absolute;
+  bottom: 3rem;
+}
+
+hr {
+  width: 1px;
+  height: 2rem;
+  background-color: var(--color-primary);
+  /* justify-self: center; */
+  align-self: center;
+}
+
+.scroll-down {
+  /* width: 100%; */
+  position: absolute;
+  right: 8.25%;
+  bottom: 8rem;
+  transform: rotate(90deg);
+  letter-spacing: 0.2rem;
+}
+
+@media screen and (max-width: 1020px) { 
+  .container {
+    width: 95%;
+    height: 100%;
+  }
+  .image-container {
+    width: 80%;
+    height: 60vh;
+  }
+
+  .scroll-down {
+    right: 0rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .image-container {
+    height: 60vh;
+    width: 100%;
+  }
+
+  .fitting-image {
+    width: 100%;
+    /* position: relative; */
+    margin-inline: auto;
+  }
+
+  .header-socials, .scroll-down {
+    display: none;
+  }
+}

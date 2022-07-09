@@ -1,0 +1,11 @@
+#blog {
+  min-height:fit-content;
+}
+
+@media screen and (max-width: 600px) {
+  #blog {
+    display: block;
+    margin-top: 0;
+    
+  }
+}
